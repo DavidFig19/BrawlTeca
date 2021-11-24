@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,15 @@
     <!--mis estilos-->
     <link rel="stylesheet" href="./assets/css/main.css">
     <!--font awesome-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 </head>
+
 <body>
     <header class="header">
         <figure class="header-brand">
-            
+
             <img src="./assets/img/brawl.png" alt="logo de nuestro sitio">
             <small>
                 Brawlteca
@@ -26,69 +29,106 @@
         </button>
         <ul class="header-menu">
             <li>
-                <a href="">¿Quienes somos?</a>
+                <a href="#info">¿Quienes somos?</a>
             </li>
             <li>
-                <a href="">Acerca de la app</a>
+                <a href="#acerca">Acerca de la app</a>
             </li>
             <li>
-                <a href="">Descarga nuestra app</a>
+                <a href="#descarga">Descarga nuestra app</a>
             </li>
         </ul>
     </header>
+
+
+
     <main class="wrapper">
-        <section class="info">
+
+        <section class="info" id="info">
+
             <h2>
                 ¿Quienes Somos?
             </h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repellendus non magni eaque aut totam at debitis possimus incidunt, nemo officia et ipsum. Cupiditate, odit blanditiis. Perferendis cupiditate odit minima et tenetur iure omnis architecto, iusto quam non aliquam sit cumque atque similique sint! Incidunt minima minus itaque quasi dicta error asperiores sit dignissimos! Ducimus labore libero ab illo repellendus assumenda fuga deserunt vero. Impedit placeat blanditiis accusantium neque velit mollitia deserunt, nemo, veritatis illo corporis doloribus sunt, eos laborum aspernatur harum molestiae ea ex quasi. Aut esse eius eaque corporis, quos repudiandae tempore tenetur rerum impedit dolorem laborum nam!
-            </p>
+            <div>
+                <p>
+                    Somos un equipo de trabajo preparado para el desarrollo móvil en dart, uno de nuestros pasatiempos
+                    favoritos es el ampliar nuestros conocimientos en los apartados tecnológicos.
+                </p>
+                <p>
+                    hoy en día el desarrollo móvil ha dado un paso muy grande, por los motivos del confinamiento,
+                    entonces surgió la idea de utilizar esto a nuestro favor, puesto que uno de los juegos top de SUPER
+                    CELL 'BRAWL STARS', nos dimos a la tarea de pensar en una aplicación para ayudarte con tu inmersión
+                    dentro del juego.
+                </p>
+                <p>
+                    En esta app podrás encontrar algunos datos importantes de este mismo, tener información sobre cada
+                    Brawler, saber un poco más de los Eventos que se está ejecutando en el juego, también por el cual
+                    tendrás acceso a la información de los Eventos próximos.
+                </p>
+
+                <p>
+                    Estos datos te serán de mucha ayuda, para poder prepararte para cumplir las misiones que tendrás
+                    todos los días, así mismo puedas completar el BROWL PASS, y así conseguirás a todos los BRAWLERS.
+                </p>
+            </div>
         </section>
 
-        <section class="acerca">
-           <figure>
-            <h2>
-                Acerca de la App
-            </h2>
-            <img src="./assets/img/spike.png" alt="spike brawler">
-           </figure>
-           <section>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repellendus non magni eaque aut totam at debitis possimus incidunt, nemo officia et ipsum. Cupiditate, odit blanditiis. Perferendis cupiditate odit minima et tenetur iure omnis architecto, iusto quam non aliquam sit cumque atque similique sint! Incidunt minima minus itaque quasi dicta error asperiores sit dignissimos! Ducimus labore libero ab illo repellendus assumenda fuga deserunt vero. Impedit placeat blanditiis accusantium neque velit mollitia deserunt, nemo, veritatis illo corporis doloribus sunt, eos laborum aspernatur harum molestiae ea ex quasi. Aut esse eius eaque corporis, quos repudiandae tempore tenetur rerum impedit dolorem laborum nam!
-            </p>
-           </section>
+        <section class="acerca" id="acerca">
+
+            <figure>
+
+                <h2>
+                    Acerca de la App
+                </h2>
+                <img src="./assets/img/spike.png" alt="spike brawler">
+            </figure>
+            <section>
+               <p>
+                Esta aplicación fue elaborada con el framework de flutter el cual utiliza el lenguaje de programación Dart, ambos desarrollados por la empresa de Google.
+               </p>
+               <p>
+                Todas las vistas y secciones de la aplicación, fueron desarrolladas por el equipo de trabajo, por lo tanto, no se utilizó ninguna plantilla y todo el diseño fue elaborado desde cero hasta el resultado final de la aplicación.
+               </p>
+               <p>
+                Sin embargo, como parte de la materia debíamos de consumir una API de terceros, y agradecemos al sitio de <a href="https://brawlapi.com/#/" style="color:#EA684B; font-size: 1.3rem;">Brawlapi</a> ya que utilizamos su API publica para elaborar nuestro proyecto, son un equipo independiente, y del cual hicimos uso de su API, para poder traerles toda la información que se encuentra en la aplicación.
+               </p>
+            </section>
         </section>
-        <section class="descarga">
+
+
+
+        <section class="descarga" id="descarga">
+
             <h2>
-               Descarga nuestra app
+                Descarga nuestra app
             </h2>
             <div>
                 <figure class="descarga-area">
-                    
-                  
+
+
                     <img src="./assets/img/smartphone.png" alt="spike brawler">
                     <a class="btndowload" href="./assets/app/test.apk">
                         Android .apk
                         <i class="fas fa-download"></i>
                     </a>
                 </figure>
-              
-               
-                 <img src="./assets/img/surge.png" alt="spike brawler" class="descarga-img">
-               
+
+
+                <img src="./assets/img/surge.png" alt="spike brawler" class="descarga-img">
+
             </div>
         </section>
 
     </main>
     <footer class="footer">
-            <p>
-                Sitio desarrollado por alumnos de la UTM 2021©
-            </p>
+        <p>
+            Sitio desarrollado por alumnos de la UTM 2021©
+        </p>
     </footer>
 
 
 
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
