@@ -281,3 +281,18 @@ text-align: center;
    }
 
 }
+
+
+@media (max-width: 510px) {
+
+    .descarga{
+
+        min-width: 100%;
+       
+    }
+    .info{
+        min-width: 100%;
+    }
+
+
+}
