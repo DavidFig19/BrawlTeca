@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Bebas Neue', cursive;
+    background-color:var(--fondo);
+    
+}
+:root{
+
+    --primary-color:#081933;
+    --secondary-color:#2F4782;
+    --height-footer:80px;
+    --height-header:70px;
+    --fondo:#1A3866;
+    --mostaza:#FABC3B;
+}
+
+/* estilos header */
+.header{
+
+  
+    width: 100%;
+    height: var(--height-header);
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:3px solid #000;
+    position: fixed;
+    top:0;
+    
+}
+/* estilos header-menu de ul */
+
+.header-menu {
+
+    display: flex;
+    justify-content: space-between;
+    
+   
+
+}
+
+.header-menu li{
+
+    margin: 5px;
+    list-style: none;
+}
+
+.header-menu li a{
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 1rem;
+    transition: border-bottom 0.3s;
+}
+
+.header-menu li a:hover{
+
+    border-bottom: 1px solid #ffff;
+    
+}
+/* estilos header del logo*/
+
+.header-brand{
+    display: flex;
+    align-items: center;
+}
+.header-brand img{
+
+    max-width: 70px;
+    max-height: 70px;
+}
+.header-brand small{
+    font-size: 1.5rem;
+    color: var(--mostaza);
+}
+
+/* estilos contenedor */
+
+.wrapper{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    min-height: calc(100vh - 70px - 80px);
+   margin-top: 100px;
+
+}
+
+.info{
+
+   
+    width: 80%;
+    margin-top: 20px;
+    padding: 20px;
+    color:#ffff;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0,0,0,0.1)0 0 10px;
+    
+}
+
+.acerca{
+
+   
+    width: 80%;
+    margin-top: 20px;
+    padding: 20px;
+    color:#ffff;
+    background-color:#397BBE;
+    box-shadow: rgba(0,0,0,0.1)0 0 10px;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.acerca figure{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.acerca figure img{
+
+    width: 150px;
+}
+.acerca section{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.descarga{
+
+   
+    width: 60%;
+    margin-top: 20px;
+    padding: 20px;
+    color:#ffff;
+    background-color:#5C92C9;
+    box-shadow: rgba(0,0,0,0.1)0 0 10px;
+
+    display: grid;
+    grid-template-rows: 20px 1fr;
+}
+.descarga h2{
+
+text-align: center;
+}
+.descarga div{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.descarga-area{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.descarga-img{
+
+    max-height: 20rem;
+    
+}
+/* estilos del pie de pagina */
+.footer{
+
+    margin-top: 50px;
+    width: 100%;
+    height: var(--height-footer);
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+/*estilos boton de descargar */
+.btndowload{
+
+    cursor: pointer;
+    outline:none;
+    border: 3px solid #4CAF50;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    text-decoration: none;
+    color:#000000;
+}
+.btndowload:hover{
+
+    background-color: #4CAF50;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.btndowload:active{
+    background-color: #0E8A0C;
+}
+
+/*boton de menu */
+#btnMenu{
+    height: 70px;
+    width: 70px;
+    font-size: 50px;
+    cursor:pointer;
+    background-color: transparent;
+    color: #f0f0f0f0;
+    border: none;
+    display: none;
+    
+}
+#btnMenu:hover{
+    color: #ffffff;
+}
+
+/* responsive */
+@media (max-width: 1060px) {
+    .descarga div{
+        
+        flex-direction: column-reverse;
+        transition: 1s;
+
+    }
+    .descarga-img{
+       
+        width:17rem ;
+        margin: 20px auto 0 auto;
+    }
+}
+
+@media (max-width: 610px) {
+   .header-menu{
+       flex-direction: column;
+       background-color: #41588A;
+       position: fixed;
+       top:50px;
+       width: 100%;
+       align-items: center;
+       padding: 10px 0;
+       left: 100%;
+       transition: left 0.3s;
+      
+
+   }
+   .active{
+       left: 0;
+   }
+   .info{
+       margin-top: 100px;
+   }
+   .acerca{
+
+    display: flex;
+    flex-direction: column;
+   }
+   .header-menu li a:hover{
+
+    color: var(--mostaza);
+   }
+
+   #btnMenu{
+       display: flex;
+   }
+
+}
