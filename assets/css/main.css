@@ -189,6 +189,7 @@ text-align: center;
     align-items: center;
     color: #ffffff;
     font-size: 1.2rem;
+    
 }
 
 /*estilos boton de descargar */
@@ -225,6 +226,7 @@ text-align: center;
     color: #f0f0f0f0;
     border: none;
     display: none;
+
     
 }
 #btnMenu:hover{
