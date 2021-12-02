@@ -151,7 +151,7 @@ body{
     box-shadow: rgba(0,0,0,0.1)0 0 10px;
 
     display: grid;
-    grid-template-rows: 20px 1fr;
+    grid-template-rows: 20px 1fr 20px;
 }
 .descarga h2{
 
@@ -232,6 +232,7 @@ text-align: center;
 #btnMenu:hover{
     color: #ffffff;
 }
+
 
 /* responsive */
 @media (max-width: 1060px) {
